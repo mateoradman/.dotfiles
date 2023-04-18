@@ -214,13 +214,8 @@ code_actions.setup {
 -- Additional Plugins
 lvim.plugins = {
   {
-    "phaazon/hop.nvim",
+    "sindrets/diffview.nvim",
     event = "BufRead",
-    config = function()
-      require("hop").setup()
-      vim.api.nvim_set_keymap("n", "s", ":HopChar2<cr>", { silent = true })
-      vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
-    end,
   },
   {
     "kevinhwang91/nvim-bqf",
