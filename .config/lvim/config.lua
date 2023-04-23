@@ -390,7 +390,13 @@ lvim.plugins = {
     end,
     ft = { "rust", "rs" },
   },
+  {
+    "npxbr/glow.nvim",
+    ft = { "markdown" }
+    -- run = "yay -S glow"
+  },
 }
+
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 vim.api.nvim_create_autocmd("BufEnter", {
   pattern = { "*.json", "*.jsonc" },
